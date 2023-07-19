@@ -11,18 +11,8 @@
     {
       "src": "/barbell-calculator/barbell512.png",
       "sizes": "512x512",
-      "type": "image/png"
-    },
-    {
-      "src": "/barbell-calculator/barbell192.ico",
-      "sizes": "72x72 96x96 128x128 192x192 256x256",
-      "type": "image/ico",
-      "purpose": "any maskable"
-    },
-    {
-      "src": "/barbell-calculator/barbell44.webp",
-      "sizes": "44x44",
-      "type": "image/webp"
+      "type": "image/png",
+      "purpose" : "any"
     }
   ]
 }
