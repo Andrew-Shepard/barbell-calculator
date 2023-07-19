@@ -57,7 +57,7 @@ const App = () => {
   
 
   return (
-    <div>
+    <div className="my-element mx-2 mx-sm-4" style={{marginTop: "20px"}}>
       <h1>Plate Calculator</h1>
       <Form>
         <Form.Group controlId="weightInput">

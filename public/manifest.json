@@ -1,15 +1,18 @@
 {
-  "name": "Plate Calculator",
-  "short_name": "Calculator",
+  "name": "Barbell Calculator",
+  "short_name": "Barbell Calculator",
+  "description": "Balances a barbell given a weight",
+  "start_url": "/barbell-calculator/index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#000000",
+  "prefer_related_applications" : true,
   "icons": [
     {
-      "src": "barbell.png",
+      "src": "/barbell-calculator/barbell.png",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any maskable"
     }
-  ],
-  "start_url": "/",
-  "display": "standalone",
-  "theme_color": "#ffffff",
-  "background_color": "#ffffff"
+  ]
 }
