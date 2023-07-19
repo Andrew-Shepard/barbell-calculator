@@ -2,7 +2,7 @@
   "name": "Barbell Calculator",
   "short_name": "Barbell Calculator",
   "description": "Balances a barbell given a weight",
-  "start_url": "/",
+  "start_url": "/barbell-calculator/index.html",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#000000",
