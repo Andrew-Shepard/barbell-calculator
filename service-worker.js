@@ -4,7 +4,7 @@ const CACHE_NAME = 'my-app-cache-v1';
 const urlsToCache = [
     '/barbell-calculator/',
     '/barbell-calculator/index.html',
-    '/barbell-calculator/barbell.png'
+    '/barbell-calculator/barbell512.png'
   ];  
 
 self.addEventListener('install', (event) => {
