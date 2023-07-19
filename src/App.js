@@ -9,13 +9,13 @@ const App = () => {
 
   const calculatePlates = () => {
     const barbellWeight = 45;
-    const availablePlates = [2.5, 5, 10, 25, 35, 45];
+    const availablePlates = [1.25, 2.5, 5, 10, 25, 35, 45];
     const totalWeight = parseFloat(weight);
     
     // Check if the total weight is less than the base weight (45)
     if (totalWeight < barbellWeight) {
       setPlates([]); // Do not add any plates
-      setRemainingWeight(totalWeight);
+      setRemainingWeight(totalWeight - barbellWeight);
       return;
     }
     
@@ -66,6 +66,12 @@ const App = () => {
             type="number"
             value={weight}
             onChange={(e) => setWeight(e.target.value)}
+            onKeyPress={(e) => {
+              if (e.key === 'Enter') {
+                e.preventDefault(); // Prevent page refresh
+                calculatePlates(); // Call the calculatePlates function
+              }
+            }}
             placeholder="Enter weight"
           />
         </Form.Group>
@@ -103,7 +109,7 @@ const App = () => {
       )}
 
 
-    {remainingWeight !== 0 && (<h2>Remaining Weight: {remainingWeight} lbs</h2>)}
+    {remainingWeight !== 0 && (<h2>Weight Difference: {remainingWeight} lbs</h2>)}
     </div>
   );
 };
