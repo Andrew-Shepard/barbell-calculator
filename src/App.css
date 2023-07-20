@@ -36,3 +36,39 @@
     transform: rotate(360deg);
   }
 }
+
+body {
+  background-color: #181818;
+}
+  
+.form-group {
+  color: #d1cccc;
+}
+h1 {
+  color: #FFFFFF;
+}
+h2 {
+  color: #FFFFFF;
+}
+h3 {
+  color: #FFFFFF;
+}
+.btn-primary {
+  background-color: #282828 !important;
+  border-color: #181818 !important;
+  color: #d3cfcf;
+}
+
+.form-label {
+  color: #B3B3B3;
+}
+.list-group-item {
+  background-color: #404040;
+  color: #FFFFFF;
+}
+
+.form-control {
+  background-color: #404040 !important;
+  color: #FFFFFF !important;
+  border-color: #181818 !important;
+}
