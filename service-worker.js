@@ -4,6 +4,8 @@ const CACHE_NAME = 'my-app-cache-v1';
 const urlsToCache = [
     '/barbell-calculator/',
     '/barbell-calculator/index.html',
+    '/barbell-calculator/App.css',
+    '/barbell-calculator/App.js',
     '/barbell-calculator/barbell512.png'
   ];  
 
