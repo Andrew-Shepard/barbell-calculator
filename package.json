@@ -16,8 +16,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "predeploy": "npm run generate-assetlinks",
-    "deploy": "gh-pages -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build -t",
     "start": "react-scripts start",
     "build": "react-scripts build && mkdir -p build/.well-known && cp public/assetlinks.json build/.well-known/",
     "test": "react-scripts test",
