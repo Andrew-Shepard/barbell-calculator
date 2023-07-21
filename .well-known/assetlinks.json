@@ -2,7 +2,7 @@
     {
       "relation": ["delegate_permission/common.handle_all_urls"],
       "target": {
-        "namespace": "io.github.andrew_shepard",
+        "namespace": "android_app",
         "package_name": "io.github.andrew_shepard.barbell_calculator.twa",
         "sha256_cert_fingerprints": [
           "FE:E0:0F:D6:43:C4:9A:2A:3B:68:62:78:C0:38:8C:A7:6C:AB:C4:61:A7:4C:63:F9:BB:D3:E7:7E:90:C5:1B:FE"
