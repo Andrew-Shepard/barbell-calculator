@@ -10,7 +10,7 @@
   "icons": [
     {
       "src": "/barbell-calculator/barbell642.png",
-      "sizes": "512x512",
+      "sizes": "642x642",
       "type": "image/png",
       "purpose" : "any"
     }
