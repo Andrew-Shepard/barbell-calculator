@@ -13,6 +13,12 @@
       "sizes": "642x642",
       "type": "image/png",
       "purpose" : "any"
+    },
+    {
+      "src": "/barbell-calculator/barbell512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose" : "maskable"
     }
   ]
 }
