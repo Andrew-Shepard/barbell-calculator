@@ -9,7 +9,7 @@
   "prefer_related_applications" : true,
   "icons": [
     {
-      "src": "/barbell-calculator/barbell512.png",
+      "src": "/barbell-calculator/barbell642.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose" : "any"

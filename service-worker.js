@@ -7,7 +7,7 @@ const urlsToCache = [
   '/barbell-calculator/service-worker.js',
   '/barbell-calculator/static/js/', 
   '/barbell-calculator/static/css/', 
-  '/barbell-calculator/barbell512.png',
+  '/barbell-calculator/barbell642.png',
   '/barbell-calculator/barbell48.png',
   '/barbell-calculator/favicon.ico',
   '/barbell-calculator/manifest.json',
