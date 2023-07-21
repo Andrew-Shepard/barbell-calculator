@@ -58,12 +58,17 @@ const App = () => {
   
 
   return (
-    <div className="my-element mx-2 mx-sm-4" style={{marginTop: "20px"}}>
-      <h1>Plate Calculator</h1>
+    <div className="my-element mx-2 mx-sm-4" style={{marginTop: "20px", color: "#d1cccc"}}>
+      <h1 style={{color: "#FFFFFF"}}>Plate Calculator</h1>
       <Form>
-        <Form.Group controlId="weightInput">
-          <Form.Label>Barbell Weight (in lbs):</Form.Label>
+        <Form.Group controlId="weightInput" style={{color: "#d1cccc"}}>
+          <Form.Label style={{color: "#B3B3B3"}}>Barbell Weight (in lbs):</Form.Label>
           <Form.Control
+            style={{
+              backgroundColor: "#404040",
+              color: "#FFFFFF",
+              borderColor: "#181818"
+            }}
             type="number"
             value={weight}
             onChange={(e) => setWeight(e.target.value)}
@@ -76,19 +81,34 @@ const App = () => {
             placeholder="Enter weight"
           />
         </Form.Group>
-        <Button variant="primary" onClick={calculatePlates} block>
+        <Button 
+          variant="primary" 
+          onClick={calculatePlates} 
+          block
+          style={{
+            backgroundColor: "#282828",
+            borderColor: "#181818",
+            color: "#d3cfcf"
+          }}
+        >
           Calculate Plates
         </Button>
       </Form>
       {plates.length > 0 && (
         <div>
-          <h2>Plates Required:</h2>
+          <h2 style={{color: "#FFFFFF"}}>Plates Required:</h2>
           <div className="barbell-container">
             <div className="left-side">
-              <h3>Left Side:</h3>
+              <h3 style={{color: "#FFFFFF"}}>Left Side:</h3>
               <ListGroup>
                 {plates.slice(0, Math.ceil(plates.length / 2)).map((plate, index) => (
-                  <ListGroup.Item key={index}>
+                  <ListGroup.Item 
+                    key={index} 
+                    style={{
+                      backgroundColor: "#404040",
+                      color: "#FFFFFF"
+                    }}
+                  >
                     {plate.count} x {plate.weight} lb plates
                   </ListGroup.Item>
                 ))}
@@ -96,10 +116,16 @@ const App = () => {
             </div>
             <hr className="bar" />
             <div className="right-side">
-              <h3>Right Side:</h3>
+              <h3 style={{color: "#FFFFFF"}}>Right Side:</h3>
               <ListGroup>
                 {plates.slice(Math.ceil(plates.length / 2)).map((plate, index) => (
-                  <ListGroup.Item key={index}>
+                  <ListGroup.Item 
+                    key={index} 
+                    style={{
+                      backgroundColor: "#404040",
+                      color: "#FFFFFF"
+                    }}
+                  >
                     {plate.count} x {plate.weight} lb plates
                   </ListGroup.Item>
                 ))}
@@ -109,10 +135,10 @@ const App = () => {
         </div>
       )}
 
-
-    {remainingWeight !== 0 && (<h2>Weight Difference: {remainingWeight} lbs</h2>)}
+      {remainingWeight !== 0 && (<h2 style={{color: "#FFFFFF"}}>Weight Difference: {remainingWeight} lbs</h2>)}
     </div>
   );
+
 };
 
 export default App;

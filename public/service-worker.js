@@ -2,10 +2,17 @@
 
 const CACHE_NAME = 'my-app-cache-v1';
 const urlsToCache = [
-    '/barbell-calculator/',
-    '/barbell-calculator/index.html',
-    '/barbell-calculator/barbell512.png'
-  ];  
+  '/barbell-calculator/',
+  '/barbell-calculator/index.html',
+  '/barbell-calculator/service-worker.js',
+  '/barbell-calculator/static/js/', 
+  '/barbell-calculator/static/css/', 
+  '/barbell-calculator/barbell512.png',
+  '/barbell-calculator/barbell48.png',
+  '/barbell-calculator/favicon.ico',
+  '/barbell-calculator/manifest.json',
+  '/barbell-calculator/robots.txt',
+];
 
 self.addEventListener('install', (event) => {
     // Perform installation steps
